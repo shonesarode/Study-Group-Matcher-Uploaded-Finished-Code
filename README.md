@@ -2,8 +2,6 @@
 
 A runnable, privacy-conscious demo that matches students by shared classes, schedules, study goals, and meeting preferences. Python/FastAPI backend, lightweight responsive JavaScript frontend, deterministic ranking, tests, and CI.
 
-**Portfolio prototype only:** Profiles are fictional. It is not a HackTX award-winning submission, a university service, or evidence of real users. The demo stores no submitted personal information.
-
 ## Run locally
 
 ```bash
@@ -28,8 +26,3 @@ Open http://localhost:8001. API docs: http://localhost:8001/docs. Run tests with
 - `POST /api/matches`: ranked matches
 - `POST /api/group`: compatible small group
 
-## Boundaries
-
-All sample students are fictional; no accounts, database, real student matchmaking, or private information storage are included. A production version would need opt-in participation, authentication, rate limiting, accessibility testing, verified course enrollment, abuse controls, and privacy protections.
-
-MIT licensed. Created as a new programming portfolio demonstration, without affiliation with UT Austin or HackTX.
