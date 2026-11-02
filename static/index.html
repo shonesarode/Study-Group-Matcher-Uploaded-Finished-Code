@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#6451b6">
+  <title>Study Circle | Find your people</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header><div class="logo"><span class="logo-icon">◎</span> studycircle<span class="dot">.</span></div><div class="header-pill">A PORTFOLIO PROTOTYPE · DEMO DATA</div></header>
+<main>
+  <section class="hero">
+    <div class="eyebrow">THE BETTER WAY TO LEARN, TOGETHER</div>
+    <h1>Your next study partner<br>is <em>one match away.</em></h1>
+    <p>Discover classmates whose courses, schedules, and learning goals fit yours. Thoughtful matching, no endless group chats.</p>
+    <div class="hero-stats"><span>01 / FIND COMMON COURSES</span><span>02 / MATCH SCHEDULES</span><span>03 / STUDY TOGETHER</span></div>
+  </section>
+  <div class="layout">
+    <section class="card form-card">
+      <div class="section-label">01 / YOUR PROFILE</div>
+      <h2>Tell us how you study.</h2>
+      <form id="matcher">
+        <label for="alias">Nickname</label><input id="alias" placeholder="e.g. LonghornDev" value="You" maxlength="32" required>
+        <label>Your courses <small>select up to four</small></label><div id="courses" class="chips" role="group" aria-label="Courses"></div>
+        <label>When are you free?</label><div id="slots" class="chips" role="group" aria-label="Availability"></div>
+        <label for="mode">Preferred format</label><select id="mode"><option value="in-person">Meet in person</option><option value="online">Meet online</option><option value="flexible">Either works</option></select>
+        <label>What are you working on?</label><div id="goals" class="chips" role="group" aria-label="Study goals"></div>
+        <button type="submit" id="match-button">Find study partners →</button>
+      </form>
+    </section>
+    <section class="card results">
+      <div class="results-head"><div class="section-label">02 / YOUR RESULTS</div><span class="demo-pill">7 fictional sample peers</span></div>
+      <h2>People on your wavelength.</h2>
+      <p class="results-note">Matches appear here after you submit your preferences. All student names and availability are invented demo data.</p>
+      <div id="message" role="status"></div>
+      <div id="matches" class="match-list">
+        <div class="empty"><span>✳</span><strong>Ready when you are.</strong><p>Choose your courses and an available time to find compatible study partners.</p></div>
+      </div>
+      <button id="group-button" class="outline" disabled>Suggest a small study group</button>
+      <div id="group-result" class="group-result"></div>
+    </section>
+  </div>
+  <div class="footer-note">Built as an independent programming exercise. Not a university matching service; no student profiles are stored or shared.</div>
+</main>
+<footer>studycircle. · Designed for learning and collaboration.</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>
